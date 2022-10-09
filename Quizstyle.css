@@ -1,0 +1,67 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    text-align: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJ39reLT0gEVy5n6KRynjWFaa-ymlwQuOXg&usqp=CAU");
+    background-size: cover;                  
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+  
+  h1 {
+    color: #FA6900;
+  }
+  
+  h2 {
+    margin-top: 2em; 
+    color: #F38630;
+  }
+
+  label { 
+    display: inline-block 
+  }
+label > input { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img { /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+label > img {
+  width: 220px;
+  height: 135px;
+  border-radius: 20px;
+  margin: 5px;
+}
+  
+  label > div {
+    background-color: #69D2E7;
+    color: white;
+    border-radius: 10px;
+    height: 2em;
+    padding-top: 12px;
+    padding-bottom: 2px;
+  }
+  
+  fieldset > legend {
+    color: white;
+    font-size: 20px;
+  }
+  .question {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+    
+  .answer-choice img {
+    width: auto;
+    height: 8em;
+    margin: 1em;
+    border-radius: 20px;
+  }
